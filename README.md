@@ -31,13 +31,15 @@ Project Management Tools: Notion (only for first few weeks into the project), Cl
 
 2. Run/Start WAMPServer. The WAMPServer icon should turn green upon successful run/start (located within the ^ "Show hidden icons" on the taskbar for a Windows laptop)
 (The following sub points are done only once during initial setup)
-2. 1 Right click on the WAMPServer icon, hover over the "Wamp Setting" and check that "Allow MariaDB" is unchecked
+
+2.1 Right click on the WAMPServer icon, hover over the "Wamp Setting" and check that "Allow MariaDB" is unchecked
 2.2  Right click on the WAMPServer icon, hover over "Tools" and check that the port 3306 is used for MySQL, if not change to 3306.
 2.3 (Left) Click on the WAMPServer icon and the WAMPServer menu should pop up. Click on menu item phpMyAdmin which will direct you to http://localhost/phpmyadmin, login with the Username "root" , leave the password input box empty and click "Go".
 2.4 Create a new database schema called "sample_data" using the SQL script provided within the sub folder "Database" of the is212_spm folder. Check that the database is successfully created.
 
 3. Running/Starting the web application
 (Note that the WAMPServer should be running (with icon lighted in green) before the web application is run)
+
 3.1 Open the is212_spm folder in source code editor, Visual Studio Code (VSC).
 3.2 Create a new terminal from within VSC
   (Do 3.2.1 and 3.2.2 (to install dependencies) only once during initial setup)
@@ -62,3 +64,5 @@ Note: The course completion status will never show completed in the web applicat
 
 
 *Snippets of project artefacts (excluding the codes)
+
+![C4-Context diagram](/C4 - Context.png)
