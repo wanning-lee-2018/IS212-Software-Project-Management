@@ -14,6 +14,19 @@ This repository contains the project artefacts that are used for developing a we
 
 **Project customer brief description**
 
+A Learning Journey Planning System (LJPS) is needed to help a Printing Solution Equipment Servicing company's employees map and track their skills progress towards attaining desired career/job goals (for self-tracking purposes and does not mean auto-enrollment). It is intended to work together with an existing web application- Learning Management System(LMS), with sharing of courses data from LMS to LJPS. The LMS allows employees to browse and register for courses for upskilling.
+
+The customer brief covers an entire system that is beyond the scope of a single school term's project. As such, **5 core features** have been agreed upon between the customer and the Product Owner to be addressed in the first release:
+1. Users should be able to select a role they want and see a list of skills required 
+2. Users should be able to see the courses they can take to acquire those skills, and add/remove them on their learning journey
+3. Create, Read, Update, Delete (CRUD) operations for roles
+4. Create, Read, Update, Delete (CRUD) operations for skills
+5. Assigning skills to roles; assigning skills to courses
+
+In first release of LJPS, 2 types of LJPS users Staff and Human Resource (HR) are considered. Feature 1,2 Feature 3 (only the R operation of the CRUD) and Feature 4 (only the R operation) are relevant to Staff. While the HR has added access control as admin of LJPS and thus all 5 Features are relevant to HR. (HR is a Staff and can choose to login as Staff to do Staff-only functions or HR to do HR-only functions)
+
+Note: Working code covers only the 5 core features for first release, while the system design and product backlog is done with the entire system in mind.
+Note: Login page and integration with LMS is not part of the requirements of first release. Sample LMS data is provided to faciliate the development of the first release of LJPS.
 
 **Tools/Software used in the project**
 Client: React.js, CoreUI
@@ -66,33 +79,37 @@ https://user-images.githubusercontent.com/43470271/205938862-fbfb7064-b534-496a-
 
 ### System Design
 
-<table align="center">
+<table>
   <tr>
     <th>C4 Context diagram</th>
     <th>C4 Container diagram</th>
   </tr>
   <tr>
-    <td>
+    <td align="center">
       <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Context.png" width="200" height="175">
     </td>
-    <td>
+    <td align="center">
       <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Container%20%5Bmonolith%5D.png" width="200" height="175">
-      <p>System requirements and functionalities are fairly straightforward, thus a monolithic backend architecture is used</p>
-      <p>LMS data retriever app will be a separate application at the container level that will be the interface between the DB and LMS. This app will update the DB directly.</p>
     </td>
+  </tr>
+  <tr>
+    <td>It was explicitly stated in the product owner meeting minutes that login/logout will be handled by Azure Single-Sign-On(SSO) (but not in first release). It was also mentioned that integration with LMS, which involves sharing of courses data is not required for first release</td>
+    <td>System requirements and functionalities are fairly straightforward, thus a monolithic backend architecture is used. LMS data retriever app will be a separate application at the container level that will be the interface between the DB and LMS. This app will update the DB directly.</td>
   </tr>
   <tr>
     <th>C4 Component diagram</th>
     <th>C4 Code diagram (ER Database)</th>
   </tr>
   <tr>
-    <td>
+    <td align="center">
       <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20model%20-%20Component.png" width="200" height="175">
-      <p>SQL alchemy library was used to connect and communicate with the database.The library enabled us to directly work with the database in python using the Object Relational Mapper (ORM).</p>
     </td>
-    <td>
+    <td align="center">
       <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Code%26ER.png" width="200" height="175">
-      <p>It was explicitly stated in the customer brief and product owner meeting minutes that a SQL relational database is to be used and the solution will eventually be deployed into AWS. Amazon RDS was chosen as it supports mySQL database, one that the team is familiar with. As the database will already be hosted on AWS, the eventual release and deployment will be more straightforward.</p>
     </td>
+  </tr>
+  <tr>
+    <td>SQL alchemy library was used to connect and communicate with the database.The library enabled us to directly work with the database in python using the Object Relational Mapper (ORM).</td>
+    <td>It was explicitly stated in the product owner meeting minutes that a SQL relational database is to be used and the solution will eventually be deployed onto AWS Cloud. Amazon RDS was chosen as it supports mySQL database, one that the team is familiar with. As the database will already be hosted on AWS, the eventual release and deployment will be more straightforward.</td>
   </tr>
 </table>
