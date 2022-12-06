@@ -52,6 +52,8 @@ Project Management Tools: Notion (only for first few weeks into the project), Cl
 - Enter the login credential (Staff ID) :130002 and select role to login as (Staff/Human Resource)
 - Here is a short demo of the user flow of a Staff using the web application to create a learning journey for him/herself
 
+<video src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/Demo%20on%20Staff%20workflow.mp4" width=180/>
+
 Note: The course completion status will never show completed in the web application because it requires integration of the course registration data from the LMS, which is not required for first release. To simulate this:
 - Update the course completion status to "Completed" for the course and staff of your choice in the registration.csv found under is212_spm>src>flask folder (the existing registration csv file only contains the prior courses already completed by the staff before the creation of the LJPS). Remember to save the newly updated registration csv file.
 - Open up a new terminal in VSC, change directory to is212_spm>src>flask folder with the command "cd /src/flask" and run the script updateCourseStatus.py with the command "python updateCourseStatus.py" to sync up the completion status of courses for staff from the newly updated registration csv file
