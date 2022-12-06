@@ -65,11 +65,29 @@ Note: The course completion status will never show completed in the web applicat
 
 *Snippets of project artefacts (excluding the codes)
 
-<p align="center">
-      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Context.png" width="50%" height="150">
-      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Container%20%5Bmonolith%5D.png" width="50%" height="150">
-</p>
-<p align="center">
-      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20model%20-%20Component.png" width="50%" height="150">
-      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Code%26ER.png" width="50%" height="150">
-</p>
+<table align="center">
+  <tr>
+    <th>C4 Context diagram</th>
+    <th>C4 Container diagram</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Context.png" width="200" height="175">
+    </td>
+    <td>
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Container%20%5Bmonolith%5D.png" width="200" height="175">
+    </td>
+  </tr>
+  <tr>
+    <th>C4 Component diagram</th>
+    <th>C4 Code diagram (ER Database)</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20model%20-%20Component.png" width="200" height="175">
+    </td>
+    <td>
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Code%26ER.png" width="200" height="175">
+    </td>
+  </tr>
+</table>
