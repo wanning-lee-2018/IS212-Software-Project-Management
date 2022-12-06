@@ -64,7 +64,7 @@ https://user-images.githubusercontent.com/43470271/205938862-fbfb7064-b534-496a-
 - Right Click on the WAMPServer icon and select "Exit"
 
 
-### Snippets of project artefacts (excluding the codes)
+### System Design
 
 <table align="center">
   <tr>
@@ -77,6 +77,8 @@ https://user-images.githubusercontent.com/43470271/205938862-fbfb7064-b534-496a-
     </td>
     <td>
       <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Container%20%5Bmonolith%5D.png" width="200" height="175">
+      <p>System requirements and functionalities are fairly straightforward, thus a monolithic backend architecture is used</p>
+      <p>LMS data retriever app will be a separate application at the container level that will be the interface between the DB and LMS. This app will update the DB directly.</p>
     </td>
   </tr>
   <tr>
@@ -86,9 +88,11 @@ https://user-images.githubusercontent.com/43470271/205938862-fbfb7064-b534-496a-
   <tr>
     <td>
       <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20model%20-%20Component.png" width="200" height="175">
+      <p>SQL alchemy library was used to connect and communicate with the database.The library enabled us to directly work with the database in python using the Object Relational Mapper (ORM).</p>
     </td>
     <td>
       <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Code%26ER.png" width="200" height="175">
+      <p>It was explicitly stated in the customer brief and product owner meeting minutes that a SQL relational database is to be used and the solution will eventually be deployed into AWS. Amazon RDS was chosen as it supports mySQL database, one that the team is familiar with. As the database will already be hosted on AWS, the eventual release and deployment will be more straightforward.</p>
     </td>
   </tr>
 </table>
