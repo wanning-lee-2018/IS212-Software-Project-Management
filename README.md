@@ -52,9 +52,11 @@ Project Management Tools: Notion (only for first few weeks into the project), Cl
 
 https://user-images.githubusercontent.com/43470271/205938862-fbfb7064-b534-496a-80c7-8d2bf77ec5bd.mp4
 
-*Note: The course completion status will never show completed in the web application because it requires integration of the course registration data from the LMS, which is not required for first release.To simulate this:
-*- Update the course completion status to "Completed" for the course and staff of your choice in the registration.csv found under is212_spm>src>flask folder (the existing registration csv file only contains the prior courses already completed by the staff before the creation of the LJPS). Remember to save the newly updated registration csv file.
-*- Open up a new terminal in VSC, change directory to is212_spm>src>flask folder with the command "cd /src/flask" and run the script updateCourseStatus.py with the command "python updateCourseStatus.py" to sync up the completion status of courses for staff from the newly updated registration csv file
+*Note: The course completion status will never show completed in the web application because it requires integration of the course registration data from the LMS, which is not required for first release.To simulate this:*
+
+*- Update the course completion status to "Completed" for the course and staff of your choice in the registration.csv found under is212_spm>src>flask folder (the existing registration csv file only contains the prior courses already completed by the staff before the creation of the LJPS). Remember to save the newly updated registration csv file.*
+
+*- Open up a new terminal in VSC, change directory to is212_spm>src>flask folder with the command "cd /src/flask" and run the script updateCourseStatus.py with the command "python updateCourseStatus.py" to sync up the completion status of courses for staff from the newly updated registration csv file*
 
 
 5. How to stop the web application from running
@@ -62,7 +64,7 @@ https://user-images.githubusercontent.com/43470271/205938862-fbfb7064-b534-496a-
 - Right Click on the WAMPServer icon and select "Exit"
 
 
-###Snippets of project artefacts (excluding the codes)
+### Snippets of project artefacts (excluding the codes)
 
 <table align="center">
   <tr>
