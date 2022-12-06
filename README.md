@@ -29,13 +29,49 @@ Note: Working code covers only the 5 core features for first release, while the 
 Note: Login page and integration with LMS is not part of the requirements of first release. Sample LMS data is provided to faciliate the development of the first release of LJPS.
 
 **Tools/Software used in the project**
-Client: React.js, CoreUI
-Server: Python, Flask, WAMPServer (for testing on local machine)
-Database: MySQL (managed using phpMyAdmin for testing on local machine), Amazon RDS (
-Testing: Unittest module, integration_test
-Continuous Integration: Github Actions
-Project Management Tools: Notion (only for first few weeks into the project), Clickup
+- Client: React.js, CoreUI
+- Server: Python, Flask, WAMPServer (for testing on local machine)
+- Database: MySQL (managed using phpMyAdmin for testing on local machine), Amazon RDS (
+- Testing: Unittest module, integration_test
+- Continuous Integration: Github Actions
+- Project Management Tools: Notion (only for first few weeks into the project), Clickup
 
+### System Design
+
+<table>
+  <tr>
+    <th>C4 Context diagram</th>
+    <th>C4 Container diagram</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Context.png" width="200" height="175">
+    </td>
+    <td align="center">
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Container%20%5Bmonolith%5D.png" width="200" height="175">
+    </td>
+  </tr>
+  <tr>
+    <td>It was explicitly stated in the product owner meeting minutes that login/logout will be handled by Azure Single-Sign-On(SSO) (but not in first release). It was also mentioned that integration with LMS, which involves sharing of courses data is not required for first release</td>
+    <td>System requirements and functionalities are fairly straightforward, thus a monolithic backend architecture is used. LMS data retriever app will be a separate application at the container level that will be the interface between the DB and LMS. This app will update the DB directly.</td>
+  </tr>
+  <tr>
+    <th>C4 Component diagram</th>
+    <th>C4 Code diagram (ER Database)</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20model%20-%20Component.png" width="200" height="175">
+    </td>
+    <td align="center">
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Code%26ER.png" width="200" height="175">
+    </td>
+  </tr>
+  <tr>
+    <td>SQL alchemy library was used to connect and communicate with the database.The library enabled us to directly work with the database in python using the Object Relational Mapper (ORM).</td>
+    <td>It was explicitly stated in the product owner meeting minutes that a SQL relational database is to be used and the solution will eventually be deployed onto AWS Cloud. Amazon RDS was chosen as it supports mySQL database, one that the team is familiar with. As the database will already be hosted on AWS, the eventual release and deployment will be more straightforward.</td>
+  </tr>
+</table>
 
 ## How to set up the web application locally (instructions for Windows computer)
 
@@ -75,41 +111,3 @@ https://user-images.githubusercontent.com/43470271/205938862-fbfb7064-b534-496a-
 5. How to stop the web application from running
 - Do "Ctrl + c" in the VSC terminal to terminate the running web application 
 - Right Click on the WAMPServer icon and select "Exit"
-
-
-### System Design
-
-<table>
-  <tr>
-    <th>C4 Context diagram</th>
-    <th>C4 Container diagram</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Context.png" width="200" height="175">
-    </td>
-    <td align="center">
-      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Container%20%5Bmonolith%5D.png" width="200" height="175">
-    </td>
-  </tr>
-  <tr>
-    <td>It was explicitly stated in the product owner meeting minutes that login/logout will be handled by Azure Single-Sign-On(SSO) (but not in first release). It was also mentioned that integration with LMS, which involves sharing of courses data is not required for first release</td>
-    <td>System requirements and functionalities are fairly straightforward, thus a monolithic backend architecture is used. LMS data retriever app will be a separate application at the container level that will be the interface between the DB and LMS. This app will update the DB directly.</td>
-  </tr>
-  <tr>
-    <th>C4 Component diagram</th>
-    <th>C4 Code diagram (ER Database)</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20model%20-%20Component.png" width="200" height="175">
-    </td>
-    <td align="center">
-      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Code%26ER.png" width="200" height="175">
-    </td>
-  </tr>
-  <tr>
-    <td>SQL alchemy library was used to connect and communicate with the database.The library enabled us to directly work with the database in python using the Object Relational Mapper (ORM).</td>
-    <td>It was explicitly stated in the product owner meeting minutes that a SQL relational database is to be used and the solution will eventually be deployed onto AWS Cloud. Amazon RDS was chosen as it supports mySQL database, one that the team is familiar with. As the database will already be hosted on AWS, the eventual release and deployment will be more straightforward.</td>
-  </tr>
-</table>
