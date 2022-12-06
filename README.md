@@ -65,4 +65,4 @@ Note: The course completion status will never show completed in the web applicat
 
 *Snippets of project artefacts (excluding the codes)
 
-![C4-Context diagram](C4 - Context.png)
+![C4-Context diagram](https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Context.png)
