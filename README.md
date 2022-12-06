@@ -64,4 +64,12 @@ Note: The course completion status will never show completed in the web applicat
 
 
 *Snippets of project artefacts (excluding the codes)
-<img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Context.png" width="150" height="200">
+
+<p align="center">
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Context.png" width="50%" height="150">
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Container%20%5Bmonolith%5D.png" width="50%" height="150">
+</p>
+<p align="center">
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20model%20-%20Component.png" width="50%" height="150">
+      <img src="https://github.com/wanning-lee-2018/IS212-Software-Project-Management/blob/main/C4%20-%20Code%26ER.png" width="50%" height="150">
+</p>
