@@ -1,6 +1,8 @@
 # IS212-Software-Project-Management
 
-This repository contains the project artefacts that are used for developing a web application using the Agile Scrum software project management methodology as part of a school module, which includes:
+This repository contains the project artefacts that are used for developing a web application using the Agile Scrum software project management methodology as part of a school module. The project was completed by 6 team members including myself and the project artefacts are extracted from the project repository and edited to run only locally (on local machines). 
+
+The project artefacts includes:
 - Codes (first release)
 - System Design diagrams (using the C4 architecture model)
   - Context diagram
@@ -9,7 +11,7 @@ This repository contains the project artefacts that are used for developing a we
   - Entity Relationship(ER) diagram for database design (it is also considered as a Code diagram under C4)
 - User Stories, Product Backlog and Definition of Done document
 - Codes and files for Software Testing (User Acceptance Test, Unit Test and integration Test)and Continuous Integration 
-- Sprint backlog, sprint standups, sprint review, sprint retrospective and scrum taskboard for a particular sprint
+- Sprint backlog, sprint standups, sprint review, sprint retrospective and scrum taskboard for a particular sprint (Sprint 3 to be specific)
 - Burnup and Burndown chart on visualising overall project progress (storypoints completed throughout the sprints)
 
 **Project customer brief description**
