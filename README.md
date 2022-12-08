@@ -14,9 +14,9 @@ The project artefacts includes:
 - Sprint backlog, sprint standups, sprint review, sprint retrospective and scrum taskboard for a particular sprint (Sprint 3 to be specific)
 - Burnup and Burndown chart on visualising overall project progress (storypoints completed throughout the sprints)
 
-**Project customer brief description**
+**Project (Fictional) customer brief description**
 
-A Learning Journey Planning System (LJPS) is needed to help a Printing Solution Equipment Servicing company's employees map and track their skills progress towards attaining desired career/job goals (for self-tracking purposes and does not mean auto-enrollment). It is intended to work together with an existing web application- Learning Management System(LMS), with sharing of courses data from LMS to LJPS. The LMS allows employees to browse and register for courses for upskilling.
+A Learning Journey Planning System (LJPS) is needed to help a (fictional) Printing Solution Equipment Servicing company's employees map and track their skills progress towards attaining desired career/job goals (for self-tracking purposes and does not mean auto-enrollment). It is intended to work together with an existing web application- Learning Management System(LMS), with sharing of courses data from LMS to LJPS. The LMS allows employees to browse and register for courses for upskilling.
 
 The customer brief covers an entire system that is beyond the scope of a single school term's project. As such, **5 core features** have been agreed upon between the customer and the Product Owner to be addressed in the first release:
 1. Users should be able to select a role they want and see a list of skills required 
