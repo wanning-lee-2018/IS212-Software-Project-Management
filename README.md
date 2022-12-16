@@ -35,7 +35,7 @@ Note: Login page and integration with LMS is not part of the requirements of fir
 - Server: Python, Flask, WAMPServer (for testing on local machine)
 - Database: MySQL (managed using phpMyAdmin for testing on local machine), Amazon RDS (
 - Testing: Unittest module
-- Continuous Integration: Github Actions
+- Version Control and Continuous Integration: GitHub, Github Actions
 - Project Management Tools: Notion (only for first few weeks into the project), Clickup
 
 ### System Design
